@@ -510,7 +510,7 @@ open class JXSegmentedView: UIView, JXSegmentedViewRTLCompatible {
     //MARK: - Private
     private func clickSelectItemAt(index: Int) {
         guard delegate?.segmentedView(self, canClickItemAt: index) != false else {
-            delegate?.segmentedView(self, didSelectedItemAt: index)
+            delegate?.segmentedView(self, didClickSelectedItemAt: index)
             return
         }
         selectItemAt(index: index, selectedType: .click)
